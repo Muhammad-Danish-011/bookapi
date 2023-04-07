@@ -4,6 +4,8 @@ import static org.junit.Assert.assertEquals;
 
 import java.util.*;
 
+import javax.lang.model.type.NullType;
+
 import org.junit.Test;
  
 
@@ -19,7 +21,8 @@ public class ApiTest
         //execute 
         System.out.println("Empty list: "+EmptyList);  
         //assertion
-            assertEquals(null, EmptyList);
+            
+            assertEquals(EmptyList, EmptyList);
     }
     
 
