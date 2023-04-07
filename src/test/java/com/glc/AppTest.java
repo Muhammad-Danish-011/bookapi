@@ -1,24 +1,21 @@
+
 package com.glc;
 
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-
+/**
+ * Unit test for simple App.
+ */
 public class AppTest 
 {
-  
+    /**
+     * Rigorous Test :-)
+     */
     @Test
-    public void testforempty()
+    public void shouldAnswerWithTrue()
     {
-        //Given that I visit the site, when I first start, I expect my list to be empty.
-       //setup
-       List<String> list = new ArrList<String>();
-       List<int> list = new Arr1list<int>();
-       //execute
-       for(int i=0; i<list.size() ;i++){
-        System.out.println(list.get(i));
-    } 
-       //assertion
+        assertTrue( true );
     }
 }
