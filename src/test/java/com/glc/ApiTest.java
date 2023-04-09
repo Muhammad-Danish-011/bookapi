@@ -64,15 +64,31 @@ public class ApiTest
 public void TestForremove()
 {
     //setup
-public void removeBook(String title) {
-    this.removeBook(title);
-  } 
+    class Book {
+        private String title;
+        private String author;
+        private int year;
+        private int length;
+    
+        public Book(String title, String author, int year, int length) {
+            this.title = title;
+            this.author = author;
+            this.year = year;
+            this.length = length;
+            System.out.println("the book which is added :"+title + author+year +length);
+        }
+        public void removeBook(String title) {
+            this.removeBook(title);
+          } 
+    }
     //execute
+    List<Book> EmptyList = Collections.<Book>emptyList();
     Book Book = new Book("ABC", "XYZ", 1925, 180);
        Book.removeBook("XYZ");
 
     //assertion
     System.out.println("remaining books:"+EmptyList);
 }
+
 
 
