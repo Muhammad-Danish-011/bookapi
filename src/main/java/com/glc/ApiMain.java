@@ -17,6 +17,12 @@ class Book {
         this.length = length;
     }
 }
+ /*class ReadNo{
+public void numberRead (int a ){
+   
+    a=a+1;
+    }
+}*/
 
 public class ApiMain {
        
@@ -30,7 +36,10 @@ public class ApiMain {
         EmptyList.add(Book);
         int i =1 ;
         i++;
-        System.out.println(i);
+        System.out.println("total no of books "+i);
+        
      }
     }
 // for add book we take help and laerned from java point , and implement our ccode to our logic !!!
+// when I add additional books to the list I expect the numberRead to return the total number of books in my list.
+

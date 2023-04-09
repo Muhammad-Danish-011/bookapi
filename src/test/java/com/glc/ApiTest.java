@@ -24,7 +24,7 @@ public class ApiTest
             
             assertEquals(EmptyList, EmptyList);
     }
-    
+    //test for total no of books added 
     @Test
     public void TestForAdd()
     {
@@ -50,10 +50,11 @@ public class ApiTest
             //asssertion
             int i =1 ;
         i++;
-        System.out.println(i);
+        System.out.println("the total no of books :"+i);
 
     }
 }
+
 
            
         
