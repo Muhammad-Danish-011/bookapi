@@ -60,7 +60,19 @@ public class ApiTest
 // I have an empty list, when I add a new book I expect getBooks() to return a list of books that includes the book I added.
 // the only change is about when a function will call so in result there is output of book whcih is add.
            
-        
+@Test
+public void TestForremove()
+{
+    //setup
+public void removeBook(String title) {
+    this.removeBook(title);
+  } 
+    //execute
+    Book Book = new Book("ABC", "XYZ", 1925, 180);
+       Book.removeBook("XYZ");
+
+    //assertion
+    System.out.println("remaining books:"+EmptyList);
+}
 
 
-        

@@ -17,6 +17,9 @@ class Book {
         this.length = length;
         System.out.println("the book which is added :"+title + author+year +length);
     }
+    public void removeBook(String title) {
+        this.removeBook(title);
+      } 
 }
  /*class ReadNo{
 public void numberRead (int a ){
@@ -24,6 +27,7 @@ public void numberRead (int a ){
     a=a+1;
     }
 }*/
+
 
 public class ApiMain {
        
@@ -38,7 +42,10 @@ public class ApiMain {
         int i =1 ;
         i++;
         System.out.println("total no of books "+i);
-        
+
+        // to remove the book and then print how many left in list 
+        Book.removeBook("XYZ");
+        System.out.println("remaining books:"+EmptyList);
      }
     }
 // for add book we take help and laerned from java point , and implement our ccode to our logic !!!
