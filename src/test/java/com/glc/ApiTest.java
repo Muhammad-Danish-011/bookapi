@@ -13,7 +13,7 @@ public class ApiTest
 {
   
   
-    @Test
+     @Test
     public void TestForEmpty()
     {
         //setup
@@ -25,7 +25,34 @@ public class ApiTest
             assertEquals(EmptyList, EmptyList);
     }
     
+    @Test
+    public void TestForAdd()
+    {
+        //setup
+        class Book {
+            private String title;
+            private String author;
+            private int year;
+            private int length;
+        
+            public Book(String title, String author, int year, int length) {
+                this.title = title;
+                this.author = author;
+                this.year = year;
+                this.length = length;
+            }
+        }
+            //execution
+            List<Book> EmptyList = Collections.<Book>emptyList(); 
+            System.out.println("Empty list: "+EmptyList);
+            Book Book = new Book("ABC", "XYZ", 1925, 180);
+            EmptyList.add(Book);
+            //asssertion
+            int i =1 ;
+        i++;
+        System.out.println(i);
 
+    }
 }
 
            
