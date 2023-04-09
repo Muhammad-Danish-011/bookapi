@@ -15,6 +15,7 @@ class Book {
         this.author = author;
         this.year = year;
         this.length = length;
+        System.out.println("the book which is added :"+title + author+year +length);
     }
 }
  /*class ReadNo{
@@ -42,4 +43,5 @@ public class ApiMain {
     }
 // for add book we take help and laerned from java point , and implement our ccode to our logic !!!
 // when I add additional books to the list I expect the numberRead to return the total number of books in my list.
-
+// I have an empty list, when I add a new book I expect getBooks() to return a list of books that includes the book I added.
+// the only change is about when a function will call so in result there is output of book whcih is add.

@@ -40,6 +40,8 @@ public class ApiTest
                 this.author = author;
                 this.year = year;
                 this.length = length;
+                System.out.println("the book which is added :"+title + author+year +length);
+                //for new book output
             }
         }
             //execution
@@ -54,8 +56,9 @@ public class ApiTest
 
     }
 }
-
-
+//this code is applicable for when  I have an empty list, when I add a new book I expect getBooks() to return a list of books that includes the book I added.
+// I have an empty list, when I add a new book I expect getBooks() to return a list of books that includes the book I added.
+// the only change is about when a function will call so in result there is output of book whcih is add.
            
         
 
