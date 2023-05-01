@@ -25,5 +25,21 @@ public class App
                 numberRead++;
 
                 System.out.println("Number of books read: " + numberRead);
+
+
+            //case 3 
+
+                        
+            int no = 0;
+            
+       
+            myList.add("The Catcher in the Rye");
+            myList.add("To Kill a Mockingbird");
+            myList.add("1984");
+            
+          
+            numberRead = myList.size();
+      
+            System.out.println("Number of books read: " + no);
             }
         }
