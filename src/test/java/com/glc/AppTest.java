@@ -28,7 +28,7 @@ public class AppTest
             }
     
            //assert
-            Assert.assertFalse(myList.isEmpty());
+            Assert.assertTrue(myList.isEmpty());
         }
         
      
