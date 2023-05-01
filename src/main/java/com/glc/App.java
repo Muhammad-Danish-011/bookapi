@@ -1,11 +1,13 @@
 package com.glc;
 import java.util.ArrayList;
+import java.util.*;
 /**
  * Hello world!
  *
  */
 public class App 
 {
+    
     public static void main( String[] args )
     {
        
@@ -41,5 +43,27 @@ public class App
             numberRead = myList.size();
       
             System.out.println("Number of books read: " + no);
+            
+
+            //case 4
+            Library library = new Library();
+            Book book1 = new Book("The Catcher in the Rye", "J.D. Salinger");
+            library.addBook(book1);
+            
+            // Remove the book by title
+            library.removeBook("The Catcher in the Rye");
+            
+            // Print the books in the library (should be empty)
+            List<Book> books = library.getBooks();
+            if (books.isEmpty()) {
+                System.out.println("No books in library");
+            } else {
+                System.out.println("Books in library:");
+                for (Book book : books) {
+                    System.out.println("- " + book);
+                }
             }
+                }
+
         }
+        
