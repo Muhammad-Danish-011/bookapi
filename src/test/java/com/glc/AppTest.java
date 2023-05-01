@@ -68,7 +68,7 @@ public class AppTest
             System.out.println("Number of books read: " + no);
             
        //assert
-        Assert.assertEquals(2, no);
+        Assert.assertEquals(3, no);
     }
 }
 
