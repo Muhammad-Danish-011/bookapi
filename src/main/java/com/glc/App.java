@@ -63,7 +63,38 @@ public class App
                     System.out.println("- " + book);
                 }
             }
-                }
-
+                
+                    //case 5
+                int a = 0;
+            
+       
+                myList.add("The Catcher in the Rye");
+                myList.add("To Kill a Mockingbird");
+                myList.add("1984");
+                
+              
+                a =  myList();
+          
+                System.out.println("Number of books : " + a);
         }
-        
+
+    private static int myList() {
+        return 0;
+    }
+
+                    //case 6
+                 
+                public void allbooks(){
+                    Library bookshelf = new Library();
+                    List<Book> allBooks = new ArrayList<>(); 
+                    allBooks.add(new Book("Book 1", "Author 1", 4.5));
+                    allBooks.add(new Book("Book 2", "Author 2", 3.8));
+                    allBooks.add(new Book("Book 3", "Author 3", 4.5));
+                    allBooks.add(new Book("Book 4", "Author 4", 2.5));
+                    allBooks.add(new Book("Book 5", "Author 5", 4.5));
+                    bookshelf.addBooks(allBooks);
+                    
+                    // get books with rating 4.5
+                    List<Book> ratedBooks = bookshelf.getBooksByRating(4.5);
+    }     
+}

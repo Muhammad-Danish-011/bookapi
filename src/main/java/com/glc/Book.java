@@ -13,12 +13,25 @@ public class Book {
         this.author = author;
     }
 
+    public Book(String string, String string2, double d) {
+    }
+
+    public Book() {
+    }
+
     public String toString() {
         return " " + title + " by " + author;
     }
 
     public Object getTitle() {
         return null;
+    }
+
+    public double getRating() {
+        return 0;
+    }
+
+    public void add(Book book) {
     }
 }
 
